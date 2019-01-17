@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.seo {
+  flex: 1;
+}
+
+#icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+#icon:hover {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transition: 300ms;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+#page1::after {
+  display: flex;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url(./img/dimigo.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  opacity: .7;
+  text-align: center;
+  content: '';
+  z-index: -1;
+}
+
+#page2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  background-image: url(./img/club.png);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 30vh;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+#page2::after {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.58);
+  z-index: -1;
+}
+
+#page3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  background-image: url(./img/ted.jpeg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 40vh;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+#page3::after {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 5, 5, 0.58);
+}
+
+#page4 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  background-image: url(./img/luna.png);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 40vh;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+#page4::after {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 33, 61, 0.5);
+}
+
+#page5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  background-image: url(./img/sullivan.png);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 40vh;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+#page5::after {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 27, 27, 0.5);
+}
+
+.page1-con {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.page2-con {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 6rem;
+  width: calc(100% - 12rem);
+}
+
+.page3-con {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'NanumSquare';
+  z-index: 2;
+  padding: 10rem;
+}
+
+.page4-con {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'NanumSquare';
+  z-index: 2;
+  padding: 10rem;
+}
+
+.page5-con {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'NanumSquare';
+  z-index: 2;
+  padding: 10rem;
+}
+
+#page2 h3 {
+  color: rgb(68, 68, 68);
+  font-family: 'Fredoka One';
+  font-weight: 200;
+  letter-spacing: 5px;
+  font-size: 4.5rem;
+  text-align: center;
+  z-index: 1;
+}
+
+#page3 h3 {
+  color: rgba(210, 111, 111, 1);
+  font-family: 'Fredoka One';
+  font-weight: 200;
+  font-size: 4.5rem;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+#page4 h3 {
+  color: rgba(219, 160, 254, 1);
+  font-family: 'Fredoka One';
+  font-weight: 200;
+  font-size: 4.5rem;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+#page5 h3 {
+  color: rgba(187, 228, 245, 1);
+  font-family: 'Fredoka One';
+  font-weight: 200;
+  font-size: 4.5rem;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+#page6 h3 {
+  color: rgba(68, 68, 68, 1);
+  font-family: 'Fredoka One';
+  font-weight: 200;
+  letter-spacing: 5px;
+  font-size: 4.5rem;
+  text-align: center;
+  z-index: 1;
+}
+
+#page7 h3 {
+  color: rgba(201, 201, 51, 1);
+  font-family: 'Fredoka One';
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#page8 h3 {
+  color: rgb(42, 159, 121);
+  font-family: 'Fredoka One';
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#page3 .text {
+  position: relative;
+  top: 20px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 1.3rem;
+  font-family: 'NanumSquare';
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#page4 .text {
+  position: relative;
+  top: 20px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 1.3rem;
+  font-family: 'NanumSquare';
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#page5 .text {
+  position: relative;
+  top: 20px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 1.3rem;
+  font-family: 'NanumSquare';
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tt {
+  display: block;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 5rem;
+  color: rgb(40, 39, 39);
+  /* color: rgb(26, 39, 68); */
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  z-index: 100;
+}
+
+#adouttt {
+  position: relative;
+  top: -16px;
+  left: 4px;
+  font-size: 1rem;
+  color: rgb(83, 83, 84);
+  letter-spacing: 1.5px;
+  font-family: 'NanumSquare';
+}
+
+.dimigo {
+  position: relative;
+  top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom: .5px solid rgb(48, 67, 99);
+  font-family: 'NanumSquare';
+  font-size: 2rem;
+  letter-spacing: -1px;
+  fo gb(60, 60, 60);
+  text-align: ce nter;
+}
+
+.hkdf {
+  position: relative;
+  top: 20px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'NanumSquare';
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(60, 60, 60);
+}
